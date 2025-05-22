@@ -1,0 +1,23 @@
+Problem Statement:
+You're building a simple user registration system. Each user has a name, age, and email. You need to:
+
+1. Define a struct called User with fields:
+        Name (string)
+        Age (int)
+        Email (string)
+
+2. Write a function NewUser(name string, age int, email string) (*User, error) that:
+    Returns an error if:
+            name is empty
+            age is less than 0 or greater than 150
+            email doesn't contain "@" (simple validation)
+            Otherwise, returns a pointer to a new User.
+
+3. Write a method IsAdult() on the User struct that returns true if age ≥ 18.
+
+4. In the main() function:
+        Declare variables for name, age, and email using short declaration (:=)
+        Call NewUser() and handle the error
+        If no error, print:
+        "User created: <name>"
+        "Is adult: true/false"
